@@ -14,8 +14,14 @@ describe("A test case ", function() {
 		   it("to expect return prime numbers in 10", function() {
 		  	expect(myApp.getPrimes('hhgjg')).toBe('not valid');
 		  })
-		   else if(Array.isArray(n) === true ){
-		    return "array is not required";
-		  }
+		    it("to expect return prime numbers in 10", function() {
+		  	expect(myApp.getPrimes([])).toBe('array is not required');
+		  })
+		    it("to expect return prime numbers in 10", function() {
+		  	expect(myApp.getPrimes(true)).toBe('is it true');
+		  })
+		    it("to expect return prime numbers in 10", function() {
+		  	expect(myApp.getPrimes(false)).toBe('is it false');
+		  })
 });
 

@@ -6,6 +6,14 @@ module.exports = {
 
 	 	if(typeof n == 'string' ){
 		    return "not valid";
+		  }else if(Array.isArray(n) === true ){
+		    return "array is not required";
+		  }
+		  else if(n === true ){
+		    return "is it true";
+		  }
+		  else if(n === false ){
+		    return "is it false";
 		  }
   
 	 	let generatedPrime =[];
