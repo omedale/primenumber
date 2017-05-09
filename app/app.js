@@ -3,6 +3,11 @@ module.exports = {
 
 
 	 getPrimes: (n)=>{
+
+	 	if(typeof n == 'string' ){
+		    return "not valid";
+		  }
+  
 	 	let generatedPrime =[];
 	 for(let count=0; count<=n; count++){
 	 	   let counter = 0;
